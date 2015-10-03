@@ -44,6 +44,7 @@ if (!RedactorPlugins) var RedactorPlugins = {};
           var patt = /default|primary|info|success|warning|danger/;
           if (patt.test(classNames)) {
             this.link.$node.addClass(classNames);
+            this.link.$node.removeClass('active');
           }
         }
       }
